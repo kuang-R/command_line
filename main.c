@@ -120,6 +120,7 @@ static void option_parse(int argc, char *argv[])
 	ret = g_option_context_parse(context, &argc, &argv, NULL);
 	if (!ret)
 		g_error("parse err");
+	g_option_context_free(context);
 
 	/* get uuid */
 	if (argc < 2)
