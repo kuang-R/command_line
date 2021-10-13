@@ -11,6 +11,9 @@ add_definitions(
 	-DDEFAULT_LOG_FILE="${DEFAULT_LOG_FILE}"
 	)
 
+# SET(CMAKE_C_FLAGS_DEBUG "$ENV{CFLAGS} -Og -Wall -g -ggdb")
+# SET(CMAKE_C_FLAGS_RELEASE "$ENV{CFLAGS} -O3)
+
 # find pkg-config
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(GLIB glib-2.0 REQUIRED)
