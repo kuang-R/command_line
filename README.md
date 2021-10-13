@@ -60,7 +60,7 @@ if (!ret)
 
 ## 日志系统
 glib的文档的确是有些少，如果需要找用法的话，把代码仓库克隆下来直接学习单元测试的代码比较好。
-默认设置是不会输出g_info和g_debug和g_critical的，必须定义环境遍历G_MESSAGE_DEBUG=all才行。
+默认设置是不会输出g_info和g_debug和g_critical的，必须定义环境变量G_MESSAGE_DEBUG=all才行。
 所以如果没有改变日志系统的全局回调函数，建议还是使用g_message, g_warning和g_error作为代替。
 
 在这个工程中，日志我统一追加到日志文件的后面。debug有NDEBUG控制而且只输出到控制台，
